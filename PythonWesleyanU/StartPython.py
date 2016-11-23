@@ -38,3 +38,71 @@ def celsius_to_fahrenheit(temp):
     newtemp = (((9*temp)/5)+32)
     print ("The Celsius temperature ", temp , " is equivalent to ", newtemp , " degrees Fahrenheit ")
     
+#%%
+def name():
+    """Gets your personal data and shows it in a formatted, nice format"""
+    fname=raw_input("Your first name: ")
+    lname = raw_input("Your last name: ")
+    city = raw_input("The city where you live: ")
+    country = raw_input("The country where your city is: ")
+    fullname = fname + " " + lname
+    location = city + ", " + country
+    print "Your name is: ", fullname
+    print "And you live in: ", location
+    
+#%%
+
+def absolutevalue():
+    
+    numero = raw_input("Introdueix un nombre: ")
+    
+    if numero >= 0:
+        valabsolut = numero
+    else: 
+        valabsolut = -numero
+    
+    print "The absolute value of ",numero," is ",valabsolut
+
+
+#%%
+
+def inches_to_feet2(inches):
+    feet = inches//12
+    rem_feet = inches%12
+    print inches,"inches is",feet,"feet and",rem_feet,"inches"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
