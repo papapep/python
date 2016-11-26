@@ -73,11 +73,36 @@ def inches_to_feet2(inches):
 
 
 
+#%%
+
+from __future__ import print_function
+
+def count_down():
+    """Rocket count down function"""
+    
+    comptador = 10
+    while comptador > 0:
+        print (comptador, end=" ")
+        comptador -= 1
+    print()
+    print ("BLASTOFF!")
 
 
+#%%
+
+from __future__ import print_function
+
+def count_down1():
+    """Rocket count down function"""
+    
+    comptador = 10
+    for comptador in range(10,0,-1):
+        print (comptador, end=" ")
+    print()
+    print ("BLASTOFF!")
 
 
-
+#%%
 
 
 
