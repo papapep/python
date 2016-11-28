@@ -109,7 +109,7 @@ auto-grader may not give you credit.
 #%%
 def problem1_4(miles):
     feet = miles * 5280
-    print "There are",feet,"feet in",miles,"miles."
+    print("There are",feet,"feet in",miles,"miles.")
 
 
     
@@ -173,7 +173,6 @@ your last number isn't 99.  Always check first and last outputs when you write
 a loop.
 """
 #%%
-from __future__ import print_function
 def problem1_6():
     num = 1
     while num != 101:
