@@ -7,7 +7,7 @@ You will parse the From line using split() and print out the second word in the 
 Hint: make sure not to include the lines that start with 'From:'."""
 
 fname = raw_input("Enter file name: ")
-if len(fname) < 1 : fname = "mbox-short.txt"
+if len(fname) < 1 : fname = "../mbox-short.txt"
 
 fh = open(fname)
 count = 0
