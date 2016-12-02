@@ -20,14 +20,14 @@ def llegeixFitxer():
             #Enviem les dades llegides
             enviaComunicacio(chatid,missatge,document)
         #Cridem la funció que mou el fitxer de serveis al directori d'històrics
-        canviaFitxer(fitxer)
+        #canviaFitxer(fitxer)
 
 #Enviem als destinataris les dades llegides del fitxer
 def enviaComunicacio(chatid, missatge, document):
 
     #Definim els paràmetres necessaris per l'API de Telegram
     url = "https://api.telegram.org/bot"
-    token = "BOT_TOKEN"
+    token = "----"
     accioM = "/sendMessage"
     accioD = "/sendDocument"
 
