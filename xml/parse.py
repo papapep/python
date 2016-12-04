@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # coding=UTF8
 
@@ -12,4 +13,4 @@ for child_of_root in root:
     for child_of_root2 in child_of_root:
         print (child_of_root2.tag, '\t', child_of_root2.text,end="\t")
     
-    print()
+print()
