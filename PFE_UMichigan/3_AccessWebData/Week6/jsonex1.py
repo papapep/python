@@ -38,25 +38,21 @@ Retrieved 2733 characters
 Count: 50
 Sum: 2...
 '''
-
 import json
+import urllib
 
-input = '''
-[
-  { "id" : "001",
-    "x" : "2",
-    "name" : "Chuck"
-  } ,
-  { "id" : "009",
-    "x" : "7",
-    "name" : "Chuck"
-  } 
-]'''
+serviceurl = 'http://python-data.dr-chuck.net/comments_339407.json'
+input = urllib.urlopen(serviceurl).read()
+data = json.loads(str(input))
 
-info = json.loads(input)
-print 'User count:', len(info)
+compta,suma = 0,0
 
-for item in info:
-    print 'Name', item['name']
-    print 'Id', item['id']
-    print 'Attribute', item['x']
+while compta < len(data[u'comments']):
+    suma = suma + data[u'comments'][compta]['count']
+    compta += 1
+
+print suma
+
+
+
+
