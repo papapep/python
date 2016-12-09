@@ -17,9 +17,7 @@ fh = open(fname)
 for line in fh:
     if not line.startswith('From: ') : continue
     pieces = line.split()
-    email = pieces[1]
-    org = str(re.findall('@(.*)',email)).strip("['']")
-    print org
+    org = str(re.findall('@(.*)',pieces[1])).strip("['']")
     cur.execute('SELECT count FROM Counts WHERE org = ? ', (org, ))
     row = cur.fetchone()
     if row is None:
