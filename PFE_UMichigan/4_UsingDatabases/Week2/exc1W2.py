@@ -27,14 +27,20 @@ for line in fh:
     else : 
         cur.execute('UPDATE Counts SET count=count+1 WHERE org = ?', 
             (org, ))
-    # This statement commits outstanding changes to disk each 
-    # time through the loop - the program can be made faster 
-    # by moving the commit so it runs only after the loop completes
     
+    #"\033[K" clears to the end of the line
+    #the \r, returns to the beginning of the line
+    #the flush statement makes sure it shows up immediately 
+    # so you get real-time output.
+
     print "\033[K","Rows I've read so far:", rows, "\r",
     sys.stdout.flush()
     
     rows += 1
+
+    # This statement commits outstanding changes to disk each 
+    # time through the loop - the program can be made faster 
+    # by moving the commit so it runs only after the loop completes
     conn.commit()
 
 # https://www.sqlite.org/lang_select.html
