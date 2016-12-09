@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import sqlite3, re
+import sqlite3, re, sys
 
 conn = sqlite3.connect('emaildb.sqlite')
 cur = conn.cursor()
@@ -14,6 +14,7 @@ CREATE TABLE Counts (org TEXT, count INTEGER)''')
 fname = raw_input('Enter file name: ')
 if ( len(fname) < 1 ) : fname = '../mbox.txt'
 fh = open(fname)
+rows = 0
 for line in fh:
     if not line.startswith('From: ') : continue
     pieces = line.split()
@@ -29,6 +30,11 @@ for line in fh:
     # This statement commits outstanding changes to disk each 
     # time through the loop - the program can be made faster 
     # by moving the commit so it runs only after the loop completes
+    
+    print "\033[K","Rows I've read so far:", rows, "\r",
+    sys.stdout.flush()
+    
+    rows += 1
     conn.commit()
 
 # https://www.sqlite.org/lang_select.html
@@ -40,5 +46,3 @@ for row in cur.execute(sqlstr) :
     print str(row[0]), row[1]
 
 cur.close()
-
-
