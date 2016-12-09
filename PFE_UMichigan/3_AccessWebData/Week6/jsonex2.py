@@ -58,6 +58,3 @@ while True:
     #print json.dumps(js, indent=4)
 
     print "Place ID:",js["results"][0]["place_id"]
-
-
-
