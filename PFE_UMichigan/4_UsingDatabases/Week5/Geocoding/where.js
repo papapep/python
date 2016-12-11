@@ -1,0 +1,20 @@
+myData = [
+[41.5026819,2.1043218, 'Campus de la UAB, Plaça Cívica, s/n, 08193 Bellaterra, Barcelona, Spain'],
+[42.3398067,-71.0891717, '360 Huntington Ave, Boston, MA 02115, United States'],
+[41.8348731,-87.6270059, '3300 S Federal St, Chicago, IL 60616, United States'],
+[32.7767783,35.0231271, 'Haifa, 3200003, Israel'],
+[18.4638871,73.8679719, 'No.666, Upper Indiranagar, Bibwewadi, Pune, Maharashtra 411037, India'],
+[38.9869183,-76.9425543, 'College Park, MD 20742, United States'],
+[42.4074843,-71.1190232, '419 Boston Ave, Medford, MA 02155‎, United States'],
+[-37.9114731,145.1344641, 'Wellington Rd & Blackburn Rd, Clayton VIC 3800, Australia'],
+[41.4064908,2.1946103, 'Rambla del Poblenou, 156, 08018 Barcelona, Spain'],
+[52.2498717,104.2647281, 'ul. Karla Marksa, 1, Irkutsk, Irkutsk Oblast, Russia, 664003'],
+[-6.974001,107.630348, 'Jl. Telekomunikasi No. 01, Terusan Buah Batu, Sukapura, Dayeuhkolot, Bandung, Jawa Barat 40257, Indonesia'],
+[31.0252201,121.4337784, '800 Dongchuan Rd, Minhang, Shanghai, China, 200240'],
+[8.4874991,4.5945597, '1515, University of Ilorin, Ilorin 240003, Nigeria'],
+[-38.311211,146.429409, 'Northways Rd, Churchill VIC 3842, Australia'],
+[-25.7676588,28.1992637, 'Preller St, Pretoria, 0002, South Africa'],
+[47.7236947,13.0871869, 'Urstein Süd 1, 5412 Salzburg, Austria'],
+[61.4497952,23.8586408, 'Korkeakoulunkatu 10, 33720 Tampere, Finland'],
+[59.941894,30.2989198, 'University Embankment, 7-9, St Petersburg, Russia, 199034']
+];
