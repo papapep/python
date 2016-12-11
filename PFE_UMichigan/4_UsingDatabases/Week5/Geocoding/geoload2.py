@@ -6,9 +6,7 @@ import ssl
 
 # If you are in China use this URL:
 # serviceurl = "http://maps.google.cn/maps/api/geocode/json?"
-#serviceurl = "http://maps.googleapis.com/maps/api/geocode/json?"
-serviceurl = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
-apikey ='AIzaSyCakOV-Thpgpy2-pKv4l1y7Yi5EfiyVqIU'
+serviceurl = "http://maps.googleapis.com/maps/api/geocode/json?"
 
 # Deal with SSL certificate anomalies Python > 2.7
 # scontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
@@ -36,7 +34,7 @@ for line in fh:
         pass
 
     print 'Resolving', address
-    url = serviceurl + urllib.urlencode({"sensor":"false", "query": address,"key": apikey})
+    url = serviceurl + urllib.urlencode({"sensor":"false", "address": address})
     print 'Retrieving', url
     uh = urllib.urlopen(url, context=scontext)
     data = uh.read()
