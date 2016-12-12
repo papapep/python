@@ -3,7 +3,7 @@ import json
 
 serviceurl = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
 #serviceurl = 'http://python-data.dr-chuck.net/geojson?'
-apikey ='AIzaSyCakOV-Thpgpy2-pKv4l1y7Yi5EfiyVqIU'
+apikey ='YOUR API KEY'
 
 while True:
     address = raw_input('Enter location: ')
