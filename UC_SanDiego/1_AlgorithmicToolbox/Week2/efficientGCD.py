@@ -1,5 +1,4 @@
 # -*- coding = utf-8 -*-
-#After 3'' of execution, it still doesn't end...
 
 def efficientGCD(a,b):
     if b == 0:
